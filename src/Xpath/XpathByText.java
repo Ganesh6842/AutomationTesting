@@ -14,7 +14,17 @@ public class XpathByText {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(".//input[@id ='pass']")).sendKeys("admin123");
 		Thread.sleep(3000);
-		driver.findElement(By.xpath(".//button[@name='login']")).click();
+		driver.findElement(By.xpath(".//button[text()='Log in']")).click();
 		Thread.sleep(3000);
+		driver.findElement(By.xpath(".//button[text()='Yes, Continue']")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(".//input[@id ='pass']")).sendKeys("admin123");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(".//button[text()='Log in']")).click();
+		Thread.sleep(3000);
+		driver.quit();
+		Thread.sleep(3000);
+		System.out.println("Task is completed");
 	}
+	
 }

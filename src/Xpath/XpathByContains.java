@@ -4,7 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class XpathByAttribute {
+public class XpathByContains {
+
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new FirefoxDriver();
 		Thread.sleep(3000);
@@ -14,16 +15,17 @@ public class XpathByAttribute {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(".//input[@id ='pass']")).sendKeys("admin123");
 		Thread.sleep(3000);
-		driver.findElement(By.xpath(".//button[@name='login']")).click();
+		driver.findElement(By.xpath(".//button[contains(text(),'Log in')]")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(".//button[text()='Yes, Continue']")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(".//input[@id ='pass']")).sendKeys("admin123");
 		Thread.sleep(3000);
-		driver.findElement(By.xpath(".//button[text()='Log in']")).click();
+		driver.findElement(By.xpath(".//button[contains(text(),'Log in')]")).click();
 		Thread.sleep(3000);
 		driver.quit();
 		Thread.sleep(3000);
 		System.out.println("Task is completed");
 	}
+	
 }
