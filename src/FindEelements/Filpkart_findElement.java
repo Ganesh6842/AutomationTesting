@@ -15,7 +15,7 @@ public class Filpkart_findElement {
 		WebDriver driver = new FirefoxDriver();
 		Thread.sleep(3000);
 		driver.get("https://www.flipkart.com/");
-		Thread.sleep(8000);
+		Thread.sleep(5000);
 
 		driver.findElement(By.xpath(".//button[@class='_2KpZ6l _2doB4z']")).click();
 		Thread.sleep(3000);
@@ -27,7 +27,7 @@ public class Filpkart_findElement {
 		title.sendKeys(Keys.ENTER);
 		Thread.sleep(3000);
 		List<WebElement> value = driver.findElements(By.xpath(".//div[@class='_4rR01T']"));
-		List<WebElement> price = driver.findElements(By.xpath(".//div[@class='_30jeq3 _1_WHN1']"));
+		List<WebElement> price = driver.findElements(By.xpath(".//div[starts-with(text(),'APPLEiphone 14(')]/ancestor::div[@class='_3pLy-c row']//div[@class='_30jeq3 _1_WHN1']"));
 		ArrayList<Integer> ref = new ArrayList<>();// create array object
 		for (int i = 0; i < price.size(); i++) {
 			String output = price.get(i).getText();// $79,9999
@@ -47,11 +47,11 @@ public class Filpkart_findElement {
 		}
 		Thread.sleep(5000);
 		// print highest and lowset value
-		System.out.println("===========================");
-		System.out.println("Iphone 14 lowest price:- " + ref.get(0));
-		System.out.println("Iphone 14 Highest price:- " + ref.get(ref.size() - 1));
-		System.out.println("===========================");
-		Thread.sleep(3000);
+//		System.out.println("===========================");
+//		System.out.println("Iphone 14 lowest price:- " + ref.get(0));
+//		System.out.println("Iphone 14 Highest price:- " + ref.get(ref.size() - 1));
+//		System.out.println("===========================");
+//		Thread.sleep(3000);
 
 		int count = 0;
 		for (int i = 0; i < price.size() || i < value.size(); i++) {
