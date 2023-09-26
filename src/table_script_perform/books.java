@@ -16,9 +16,11 @@ public class books {
 		System.out.println("******************");
 		List<WebElement> book = driver.findElements(By.xpath(".//tr/td[2]"));
 		List<WebElement> cost = driver.findElements(By.xpath(".//tr/td[3]"));
-		
+		WebElement total = driver.findElement(By.xpath(".//td[text()='4500']"));
+		   String total1 = total.getText();
+		   int tot = Integer.parseInt(total1);
        int sum =0;
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < book.size(); i++) {
 			String text = book.get(i).getText();
 			String amount = cost.get(i).getText();
 			   int o= Integer.parseInt(amount);
@@ -26,6 +28,10 @@ public class books {
 			System.out.println(text+"-->"+amount);
 		}
 		System.out.println("************************8");
-		System.out.println(sum);
+		if(sum==tot) {
+		System.out.println("equal");
+		}else {
+			System.out.println("not equals");
+		}
 	}
 }
