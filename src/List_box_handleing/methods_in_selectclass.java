@@ -65,6 +65,6 @@ public class methods_in_selectclass {
 			}
 		}
 		System.out.println("task");
-		driver.close();
+//		driver.close();
 	}
 }
