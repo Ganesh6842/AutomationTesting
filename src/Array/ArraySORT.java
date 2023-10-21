@@ -16,6 +16,7 @@ public class ArraySORT {
 				}
 			}
 			System.out.print(arr[i]);
+			
 		}
 	}
 }
