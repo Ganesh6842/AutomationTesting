@@ -8,12 +8,21 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">101</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">edge</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28,305</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">chrome</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28,441</td><td></td><td></td></tr>
+<tr><td><a href="#t2">firefox</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">31,586</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">88,332</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testNG.all_methods_run</td><td><a href="#m0">test_01</a></td><td rowspan="1">1697901964007</td><td rowspan="1">15</td></tr><tr class="passedeven"><td><a href="#m1">test_02</a></td><td rowspan="1">1697901964032</td><td rowspan="1">2</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">edge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestNG_saurce_demo.Test_case_01</td><td><a href="#m0">login</a></td><td rowspan="1">1698847251818</td><td rowspan="1">7393</td></tr><tr class="passedodd"><td rowspan="1">TestNG_saurce_demo.Test_case_02</td><td><a href="#m1">invalidlogin</a></td><td rowspan="1">1698847267865</td><td rowspan="1">1008</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestNG_saurce_demo.Test_case_01</td><td><a href="#m2">login</a></td><td rowspan="1">1698847255979</td><td rowspan="1">729</td></tr><tr class="passedodd"><td rowspan="1">TestNG_saurce_demo.Test_case_02</td><td><a href="#m3">invalidlogin</a></td><td rowspan="1">1698847264425</td><td rowspan="1">4325</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">firefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestNG_saurce_demo.Test_case_01</td><td><a href="#m4">login</a></td><td rowspan="1">1698847253867</td><td rowspan="1">772</td></tr><tr class="passedodd"><td rowspan="1">TestNG_saurce_demo.Test_case_02</td><td><a href="#m5">invalidlogin</a></td><td rowspan="1">1698847270281</td><td rowspan="1">676</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testNG.all_methods_run#test_01</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test_01 method exected</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testNG.all_methods_run#test_02</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test_01 method exected</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>edge</h2><h3 id="m0">TestNG_saurce_demo.Test_case_01#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestNG_saurce_demo.Test_case_02#invalidlogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>chrome</h2><h3 id="m2">TestNG_saurce_demo.Test_case_01#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestNG_saurce_demo.Test_case_02#invalidlogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>firefox</h2><h3 id="m4">TestNG_saurce_demo.Test_case_01#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestNG_saurce_demo.Test_case_02#invalidlogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

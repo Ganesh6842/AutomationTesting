@@ -1,33 +1,339 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Test_01 method exected]]>
+      <![CDATA[loginexecution is pass]]>
     </line>
     <line>
-      <![CDATA[Test_01 method exected]]>
+      <![CDATA[loginexecution is pass]]>
+    </line>
+    <line>
+      <![CDATA[loginexecution is pass]]>
+    </line>
+    <line>
+      <![CDATA[invalidloginexecution is pass]]>
+    </line>
+    <line>
+      <![CDATA[invalidloginexecution is pass]]>
+    </line>
+    <line>
+      <![CDATA[invalidloginexecution is pass]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-10-21T20:56:03 IST" name="Default suite" finished-at="2023-10-21T20:56:04 IST" duration-ms="101">
+  <suite started-at="2023-11-01T19:30:41 IST" name="Suite" finished-at="2023-11-01T19:31:13 IST" duration-ms="31586">
     <groups>
     </groups>
-    <test started-at="2023-10-21T20:56:03 IST" name="Default test" finished-at="2023-10-21T20:56:04 IST" duration-ms="101">
-      <class name="testNG.all_methods_run">
-        <test-method signature="test_01()[pri:0, instance:testNG.all_methods_run@42a48628]" started-at="2023-10-21T20:56:04 IST" name="test_01" finished-at="2023-10-21T20:56:04 IST" duration-ms="15" status="PASS">
+    <test started-at="2023-11-01T19:30:41 IST" name="edge" finished-at="2023-11-01T19:31:09 IST" duration-ms="28305">
+      <class name="TestNG_saurce_demo.Test_case_02">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_02@40a4337a]" started-at="2023-11-01T19:30:59 IST" name="openBrowser" finished-at="2023-11-01T19:31:06 IST" duration-ms="7143" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:TestNG_saurce_demo.Test_case_02@40a4337a]" started-at="2023-11-01T19:31:06 IST" name="openApp" finished-at="2023-11-01T19:31:07 IST" duration-ms="1275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="invalidlogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_02@40a4337a]" started-at="2023-11-01T19:31:07 IST" name="invalidlogin" data-provider="testdata_01" finished-at="2023-11-01T19:31:08 IST" duration-ms="1008" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidlogin -->
+        <test-method is-config="true" signature="testMethod(org.testng.ITestResult)[pri:0, instance:TestNG_saurce_demo.Test_case_02@40a4337a]" started-at="2023-11-01T19:31:08 IST" name="testMethod" finished-at="2023-11-01T19:31:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidlogin status=SUCCESS method=Test_case_02.invalidlogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_02@40a4337a] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[Test_01 method exected]]>
+              <![CDATA[invalidloginexecution is pass]]>
             </line>
           </reporter-output>
-        </test-method> <!-- test_01 -->
-        <test-method signature="test_02()[pri:0, instance:testNG.all_methods_run@42a48628]" started-at="2023-10-21T20:56:04 IST" name="test_02" finished-at="2023-10-21T20:56:04 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNG_saurce_demo.Test_case_02@40a4337a]" started-at="2023-11-01T19:31:08 IST" name="closeBrowser" finished-at="2023-11-01T19:31:09 IST" duration-ms="902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestNG_saurce_demo.Test_case_02 -->
+      <class name="TestNG_saurce_demo.Test_case_01">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_01@6a6cb05c]" started-at="2023-11-01T19:30:41 IST" name="openBrowser" finished-at="2023-11-01T19:30:50 IST" duration-ms="8808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:TestNG_saurce_demo.Test_case_01@6a6cb05c]" started-at="2023-11-01T19:30:50 IST" name="openApp" finished-at="2023-11-01T19:30:51 IST" duration-ms="1478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_01@6a6cb05c]" started-at="2023-11-01T19:30:51 IST" name="login" data-provider="testdata" finished-at="2023-11-01T19:30:59 IST" duration-ms="7393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="testMethod(org.testng.ITestResult)[pri:0, instance:TestNG_saurce_demo.Test_case_01@6a6cb05c]" started-at="2023-11-01T19:30:59 IST" name="testMethod" finished-at="2023-11-01T19:30:59 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Test_case_01.login(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_01@6a6cb05c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[Test_01 method exected]]>
+              <![CDATA[loginexecution is pass]]>
             </line>
           </reporter-output>
-        </test-method> <!-- test_02 -->
-      </class> <!-- testNG.all_methods_run -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNG_saurce_demo.Test_case_01@6a6cb05c]" started-at="2023-11-01T19:30:59 IST" name="closeBrowser" finished-at="2023-11-01T19:30:59 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestNG_saurce_demo.Test_case_01 -->
+    </test> <!-- edge -->
+    <test started-at="2023-11-01T19:30:41 IST" name="chrome" finished-at="2023-11-01T19:31:09 IST" duration-ms="28441">
+      <class name="TestNG_saurce_demo.Test_case_02">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_02@43bc63a3]" started-at="2023-11-01T19:30:57 IST" name="openBrowser" finished-at="2023-11-01T19:31:03 IST" duration-ms="6230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:TestNG_saurce_demo.Test_case_02@43bc63a3]" started-at="2023-11-01T19:31:03 IST" name="openApp" finished-at="2023-11-01T19:31:04 IST" duration-ms="1181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="invalidlogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_02@43bc63a3]" started-at="2023-11-01T19:31:04 IST" name="invalidlogin" data-provider="testdata_01" finished-at="2023-11-01T19:31:08 IST" duration-ms="4325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidlogin -->
+        <test-method is-config="true" signature="testMethod(org.testng.ITestResult)[pri:0, instance:TestNG_saurce_demo.Test_case_02@43bc63a3]" started-at="2023-11-01T19:31:08 IST" name="testMethod" finished-at="2023-11-01T19:31:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidlogin status=SUCCESS method=Test_case_02.invalidlogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_02@43bc63a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[invalidloginexecution is pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNG_saurce_demo.Test_case_02@43bc63a3]" started-at="2023-11-01T19:31:08 IST" name="closeBrowser" finished-at="2023-11-01T19:31:09 IST" duration-ms="1153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestNG_saurce_demo.Test_case_02 -->
+      <class name="TestNG_saurce_demo.Test_case_01">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_01@38425407]" started-at="2023-11-01T19:30:41 IST" name="openBrowser" finished-at="2023-11-01T19:30:50 IST" duration-ms="9216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:TestNG_saurce_demo.Test_case_01@38425407]" started-at="2023-11-01T19:30:50 IST" name="openApp" finished-at="2023-11-01T19:30:55 IST" duration-ms="5243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_01@38425407]" started-at="2023-11-01T19:30:55 IST" name="login" data-provider="testdata" finished-at="2023-11-01T19:30:56 IST" duration-ms="729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="testMethod(org.testng.ITestResult)[pri:0, instance:TestNG_saurce_demo.Test_case_01@38425407]" started-at="2023-11-01T19:30:56 IST" name="testMethod" finished-at="2023-11-01T19:30:56 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Test_case_01.login(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_01@38425407] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[loginexecution is pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNG_saurce_demo.Test_case_01@38425407]" started-at="2023-11-01T19:30:56 IST" name="closeBrowser" finished-at="2023-11-01T19:30:57 IST" duration-ms="289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestNG_saurce_demo.Test_case_01 -->
+    </test> <!-- chrome -->
+    <test started-at="2023-11-01T19:30:41 IST" name="firefox" finished-at="2023-11-01T19:31:13 IST" duration-ms="31586">
+      <class name="TestNG_saurce_demo.Test_case_02">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_02@1aafa419]" started-at="2023-11-01T19:30:57 IST" name="openBrowser" finished-at="2023-11-01T19:31:08 IST" duration-ms="10316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:TestNG_saurce_demo.Test_case_02@1aafa419]" started-at="2023-11-01T19:31:08 IST" name="openApp" finished-at="2023-11-01T19:31:10 IST" duration-ms="2152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="invalidlogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_02@1aafa419]" started-at="2023-11-01T19:31:10 IST" name="invalidlogin" data-provider="testdata_01" finished-at="2023-11-01T19:31:10 IST" duration-ms="676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidlogin -->
+        <test-method is-config="true" signature="testMethod(org.testng.ITestResult)[pri:0, instance:TestNG_saurce_demo.Test_case_02@1aafa419]" started-at="2023-11-01T19:31:10 IST" name="testMethod" finished-at="2023-11-01T19:31:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidlogin status=SUCCESS method=Test_case_02.invalidlogin(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_02@1aafa419] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[invalidloginexecution is pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNG_saurce_demo.Test_case_02@1aafa419]" started-at="2023-11-01T19:31:10 IST" name="closeBrowser" finished-at="2023-11-01T19:31:13 IST" duration-ms="2093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestNG_saurce_demo.Test_case_02 -->
+      <class name="TestNG_saurce_demo.Test_case_01">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_01@7cc0cdad]" started-at="2023-11-01T19:30:41 IST" name="openBrowser" finished-at="2023-11-01T19:30:51 IST" duration-ms="9942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:TestNG_saurce_demo.Test_case_01@7cc0cdad]" started-at="2023-11-01T19:30:51 IST" name="openApp" finished-at="2023-11-01T19:30:53 IST" duration-ms="2404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_01@7cc0cdad]" started-at="2023-11-01T19:30:53 IST" name="login" data-provider="testdata" finished-at="2023-11-01T19:30:54 IST" duration-ms="772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="testMethod(org.testng.ITestResult)[pri:0, instance:TestNG_saurce_demo.Test_case_01@7cc0cdad]" started-at="2023-11-01T19:30:54 IST" name="testMethod" finished-at="2023-11-01T19:30:54 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Test_case_01.login(java.lang.String,java.lang.String)[pri:0, instance:TestNG_saurce_demo.Test_case_01@7cc0cdad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[loginexecution is pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNG_saurce_demo.Test_case_01@7cc0cdad]" started-at="2023-11-01T19:30:54 IST" name="closeBrowser" finished-at="2023-11-01T19:30:57 IST" duration-ms="3160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestNG_saurce_demo.Test_case_01 -->
+    </test> <!-- firefox -->
+  </suite> <!-- Suite -->
 </testng-results>
